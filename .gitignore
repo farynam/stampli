@@ -1,0 +1,46 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+story-combat-prod.tar.gz
+.devcontainer/ext/plugins/donjayamanne.githistory-0.6.20.vsix
+.devcontainer/ext/plugins/eamodio.gitlens-2024.4.405.vsix
+.devcontainer/ext/plugins/mhutchie.git-graph-1.30.0.vsix
+.devcontainer/lib/dart-sass-1.72.0-linux-x64.tar.gz
+.devcontainer/lib/go1.22.1.linux-amd64.tar.gz
+.devcontainer/lib/hugo_extended_0.124.1_Linux-64bit.tar.gz
+.devcontainer/devcontainer.json
+.devcontainer/Dockerfile
+.devcontainer/README.md
+.devcontainer/certs/all.crt
+.devcontainer/certs/squid_ca.crt
+.devcontainer/certs/tuxedo.crt
+.devcontainer/conf/.docker/config.json
+.devcontainer/conf/docker/daemon.json
+.devcontainer/ext/download_ext.sh
+.devcontainer/ext/ext.list
+.devcontainer/ext/template.txt
+Elements Drawer V2.0 Frontend.pdf
+interview.txt
+testData.json
+.vscode/settings.json
