@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row {
+    display: flex;
+    padding: 10px;
+
+}
+
+.grid-col {
+    flex: 0.2;
+    /* Distribute cells 30% each in row */
+    text-align: left;
+    padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .grid {
+        display: block;
+    }
+
+    .grid-row {
+        display: block;
+        padding: 0px;
+    }
+}

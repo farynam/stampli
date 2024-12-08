@@ -35,10 +35,14 @@ function orderPositions(gridDataList: React.ReactNode[]): React.ReactNode[] {
 
     for (let i = 0; i < gridDataList.length; i += 2) {
         out.push(
-        <tr key={i}>
-            <td>{gridDataList[i]}</td>
-            <td>{gridDataList[i + 1]}</td>
-        </tr>)
+        <div key={i} className='grid-row'>
+            <div className="grid-col"> 
+            {gridDataList[i]}
+            </div>
+            <div className="grid-col"> 
+            {gridDataList[i + 1]}
+            </div>
+        </div>)
     }
 
     return out;
@@ -60,18 +64,9 @@ const MainComponent: React.FC<MyComponentProps> = ({ gridDataList }) => {
     }, []);
 
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th style={{textAlign: "center"}} colSpan={2}>Parsed Form meta data</th>
-                 
-                </tr>
-                
-            </thead>
-            <tbody>
+        <div className='grid'>
                 {orderPositions(builder(gridDataList))}
-            </tbody>
-        </table>
+        </div>
     )
 }
 
